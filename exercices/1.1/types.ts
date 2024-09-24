@@ -8,6 +8,17 @@ interface PizzaToUpdate {
   title?: string;
   content?: string;
 }
+interface Film {
+  id: number;
+  title: string;
+  director: string;
+  duration: number;
+  budget?: number;
+  description?: string;
+  imageUrl?: string;
+}
+
+export type { Film};
 
 type NewPizza = Omit<Pizza, "id">;
 
